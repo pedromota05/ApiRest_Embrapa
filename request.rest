@@ -1,0 +1,28 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "title": "SIP 2023 - Simpósio sobre Sistemas Intensivos de Produção | Rodrigo Arroyo Garcia",
+    "date": "07/06/2023",
+    "image": "https://i.ytimg.com/vi/1vOp2jrq0E4/maxresdefault.jpg"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/64ad77ea74aaad64a0a4bcbf
+
+###
+DELETE http://localhost:3000/api/services/64ad796674aaad64a0a4bcc1
+
+###
+PUT http://localhost:3000/api/services/64ad796674aaad64a0a4bcc1
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÃO",
+    "description": "Alguma descrição",
+    "price": 2000,
+    "image": "https://www.embrapa.br/image/journal/article?img_id=81689912&t=1689084043130&width=255"
+}
